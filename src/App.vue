@@ -14,16 +14,19 @@
 </template>
 
 <script>
-import { computed } from "vue";
-import { AppState } from "./AppState";
+import { computed } from 'vue'
+import { AppState } from './AppState'
+import NasaPage from './pages/NasaPage.vue'
+
 export default {
-  name: "App",
+  name: 'App',
   setup() {
     return {
-      appState: computed(() => AppState),
-    };
+      appState: computed(() => AppState)
+    }
   },
-};
+  components: { NasaPage }
+}
 </script>
 <style lang="scss">
 @import "./assets/scss/main.scss";
